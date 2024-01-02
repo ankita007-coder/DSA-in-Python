@@ -1,0 +1,23 @@
+#Mathematical Operators
+#print("Hello World")
+n = int(input())
+#addition
+print(n+1)
+
+#subtraction
+print(n-1)
+
+#multiplication
+print(n*2)
+
+#division
+print("with single slash",n/2)
+
+print("with two slash",n//2)
+
+#exponent
+print(n**2)
+#modul
+print(n%2)
+
+
