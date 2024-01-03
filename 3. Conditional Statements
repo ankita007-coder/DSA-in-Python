@@ -1,0 +1,25 @@
+#if statement
+
+#n= 3
+#m = int(input())
+#if n==m:
+#    print("n is equal to the number you entered")
+
+#if-else statement
+n= 3
+m = int(input())
+if n==m:
+    print("n is equal to the number you entered")
+else:
+    print("it is not equal")
+
+#if-elif-else statement
+
+marks = int(input())
+
+if marks>=80:
+    print("'A'")
+elif marks<80 and marks>=60:
+    print('"B"')
+else:
+    print("C")
