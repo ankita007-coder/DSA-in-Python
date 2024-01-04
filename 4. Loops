@@ -1,0 +1,26 @@
+#for loop
+#for i in range(1,11):
+ #   print(i)
+ 
+#for i in "Ankita":
+#    print(i,end="")
+
+#for i in [1,2,3]:
+ #   print(i)
+ 
+i,n=2,1
+while n<=10:
+    print(i*n)
+    n+=1
+
+#sum of divisors from 1 to N
+def sumOfAllDivisors(n: int) -> int:
+    # Write your code here
+    s = 0
+    for i in range(1,n+1):
+        for j in range(1,i+1):
+            if i%j==0:
+                s+=j
+    return s
+
+    pass
