@@ -1,0 +1,38 @@
+#check prime brute approach
+
+from math import *
+from collections import *
+from sys import *
+from os import *
+
+## Read input as specified in the question.
+## Print output as specified in the question.
+n = int(input())
+i,c=2,0
+while i<n:
+    if n%i==0:
+        c+=1
+    i+=1
+if c==0:
+    print("true")
+else:
+    print("false")
+#check prime better approach
+
+from math import *
+from collections import *
+from sys import *
+from os import *
+
+## Read input as specified in the question.
+## Print output as specified in the question.
+n = int(input())
+i,c=2,0
+while i<=n//2:
+    if n%i==0:
+        c+=1
+    i+=1
+if c==0:
+    print("true")
+else:
+    print("false")
