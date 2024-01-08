@@ -1,0 +1,37 @@
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+n = int(input())
+temp,c = n,0
+while temp>0:
+    c+=1
+    temp//=10
+temp,s = n,0
+while temp>0:
+    d = temp%10
+    s+= (d**c)
+    temp//=10
+if s==n:
+    print("true")
+else:
+    print("false")from os import *
+from sys import *
+from collections import *
+from math import *
+
+n = int(input())
+temp,c = n,0
+while temp>0:
+    c+=1
+    temp//=10
+temp,s = n,0
+while temp>0:
+    d = temp%10
+    s+= (d**c)
+    temp//=10
+if s==n:
+    print("true")
+else:
+    print("false")
