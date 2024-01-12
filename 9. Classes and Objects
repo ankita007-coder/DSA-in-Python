@@ -1,0 +1,15 @@
+//CLASS
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print(f"{self.name} is barking!")
+        
+//OBJECTS        
+my_dog = Dog("Buddy", 3)
+your_dog = Dog("Molly", 2)
+
+my_dog.bark()  // Output: Buddy is barking!
+your_dog.bark()  // Output: Molly is barking!
