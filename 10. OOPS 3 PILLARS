@@ -1,0 +1,25 @@
+//INHERITANCE
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print(f"{self.name} is barking!")
+
+class Bulldog(Dog):
+    def __init__(self, name, age, color):
+        super().__init__(name, age)
+        self.color = color
+
+    def bark(self):
+        print(f"{self.name} the Bulldog is barking loudly!")
+
+// Create an object of Bulldog
+my_bulldog = Bulldog("Spike", 4, "Brown")
+
+// Access inherited method from Dog class
+my_bulldog.bark() //Outputs: Spike the Bulldog is barking loudly!
+
+// Access attribute specific to Bulldog class
+print(f"{my_bulldog.name} is {my_bulldog.color}.")  // Outputs: Spike is Brown.
