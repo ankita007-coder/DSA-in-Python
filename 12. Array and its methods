@@ -1,0 +1,52 @@
+# create an array
+a = [1, 2, 3]
+
+# append an element
+a.append(4)
+
+print(a)
+
+# reverse the array
+a.reverse()
+print(a)
+
+# clear the array
+a.clear()
+print(a)
+
+a = [1, 9, 2, 3]
+
+# sort the array
+a.sort()
+print(a)
+
+# pop an element
+a.pop()
+print(a)
+
+# count the elements
+print(a.count(9))
+
+# insert an element
+a.insert(2, 2)  # index value, element value
+print(a)
+
+# copy the array
+arr = a.copy()
+print(arr)
+
+# extend the array
+arr.extend(a)
+print(arr)  # Note: extend modifies arr in-place and returns None
+
+# append elements from another list
+a.append([10, 11, 12])
+print(a)
+
+# remove an element
+a.remove(2)  # specify the element to remove
+print(a)
+
+# index of an element
+index = a.index(9)
+print(index)
