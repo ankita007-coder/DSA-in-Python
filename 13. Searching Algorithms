@@ -1,0 +1,35 @@
+#Linear Search
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def linearSearch(a, x):
+    # Write your code here.
+    for i in range(len(a)):
+        if a[i]==x:
+            return i
+    return -1
+
+#Binary Search
+def search(nums: [int], target: int):
+    # write your code logic !!
+    n = len(nums)
+    start,end = 0,n-1
+    while start<=end:
+        mid=(start+end)//2
+        if nums[mid]==target:
+            return mid
+        elif target>nums[mid]:
+            start = mid+1
+        else:
+            end = mid-1
+    return -1
+
+
+
+    
+n= int (input())
+arr = list(map(int,input().strip().split()))[:n]
+target =int (input())
+print (search(arr, target))
