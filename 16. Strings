@@ -1,0 +1,64 @@
+Here are some of the functions that can be used on strings in Python:
+capitalize(): This function capitalizes the first character of a string.
+count(): This function counts the number of times a substring appears in a string.
+find(): This function returns the index of the first occurrence of a substring in a string.
+index(): This function returns the index of the first occurrence of a substring in a string, or raises an exception if the substring is not found.
+join(): This function joins a sequence of strings into a single string, using a specified separator.
+lower(): This function converts a string to lowercase.
+replace(): This function replaces all occurrences of a substring in a string with another string.
+split(): This function splits a string into a list of strings, using a specified separator.
+strip(): This function removes leading and trailing whitespace from a string.
+upper(): This function converts a string to uppercase.
+
+my_string = "Hello, world!"
+my_string.capitalize()
+'Hello, world!'
+my_string.count("l")
+3
+my_string.find("world")
+7
+my_string.index("world")
+7
+my_string.join(["Hello", ",", "world!"])
+'Hello, world!'
+my_string.lower()
+'hello, world!'
+my_string.replace("world", "everyone")
+'Hello, everyone!'
+my_string.split(" ")
+['Hello,', 'world!']
+my_string.strip()
+'Hello, world!'
+my_string.upper()
+'HELLO, WORLD!'
+
+# Print each character in the string "hello world"
+for char in "hello world":
+  print(char)
+
+# Print the index and the value of each character in the string "hello world"
+for i, char in enumerate("hello world"):
+  print(i, char)
+
+# Create a list of the characters in the string "hello world"
+chars = [char for char in "hello world"]
+
+# Get the substring "hello" from the string "hello world"
+substring = "hello world"[0:5]
+
+# Get the substring "world" from the string "hello world"
+substring = "hello world"[5:]
+
+# Get the substring "hello" from the string "hello world"
+substring = "hello world"[:5]
+
+
+#ASCII to string
+ascii_code = 65
+character = chr(ascii_code)
+print(character)
+
+#String to ASCII
+character = "A"
+ascii_value = ord(character)
+print(ascii_value)
