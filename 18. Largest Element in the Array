@@ -1,0 +1,28 @@
+#using sort algorithm
+from sys import *
+from collections import *
+from math import *
+
+def largestElement(arr: [], n: int) -> int:
+
+    # Write your code from here.
+    arr.sort()
+    return arr[n-1]
+    pass
+
+#In TC - O(N)
+
+from sys import *
+from collections import *
+from math import *
+
+def largestElement(arr: [], n: int) -> int:
+
+    # Write your code from here.
+    maxi=-1
+    for i in arr:
+        if i>maxi:
+            maxi = i
+    return maxi
+    pass
+
