@@ -1,0 +1,29 @@
+#brute 
+class Solution(object):
+    def missingNumber(self, a):
+        N = len(a)
+        for i in range(0, N + 1):
+            # flag variable to check if an element exists
+            flag = False
+
+            for j in range(len(a)):
+                if a[j] == i:
+                    # i is present in the array:
+                    flag = True
+                    break
+
+            if flag == False:
+                return i
+
+
+#optimal
+class Solution(object):
+    def missingNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        s = n*(n+1)//2
+        s1 = sum(nums)
+        return s-s1
