@@ -1,0 +1,54 @@
+#dutch national flag algorithm
+class Solution(object):
+    def sortColors(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        low,mid,high=0,0,len(nums)-1
+        while mid<=high:
+            if nums[mid]==0:
+                nums[low],nums[mid]=nums[mid],nums[low]
+                low+=1
+                mid+=1
+            elif nums[mid]==1:
+                mid+=1
+            else:
+                nums[high],nums[mid]=nums[mid],nums[high]
+                high-=1
+        return nums
+
+#brute
+class Solution(object):
+    def sortColors(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        zero_count, one_count, two_count = 0, 0, 0
+        for num in nums:
+            if num == 0:
+                zero_count += 1
+            elif num == 1:
+                one_count += 1
+            else:
+                two_count += 1
+        
+        nums.clear()  # Clear the original list
+        
+        # Append zeros, ones, and twos in the modified list according to their counts
+        nums.extend([0] * zero_count)
+        nums.extend([1] * one_count)
+        nums.extend([2] * two_count)
+        return nums
+
+#using sort function
+class Solution(object):
+    def sortColors(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        nums.sort()
+        return nums
+
