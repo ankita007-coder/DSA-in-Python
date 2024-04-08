@@ -1,0 +1,13 @@
+class Solution:
+    #Back-end complete function Template for Python 3
+    
+    #Function to find the leaders in the array.
+    def leaders(self, A, N):
+        #Code here
+        res=[A[N-1]]
+        maxi = A[N-1]
+        for i in range(N-2,-1,-1):
+            if maxi<=A[i]:
+                maxi=A[i]
+                res.append(maxi)
+        return res[::-1]
